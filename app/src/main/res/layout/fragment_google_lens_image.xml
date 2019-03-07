@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.GoogleLensImageFragment">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_set1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/identify_plants_and_animals_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="6">
+
+            <ImageView
+                android:id="@+id/left_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight=".2"
+                android:layout_gravity="center"
+                android:src="@drawable/btn_left"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.4"
+                android:src="@drawable/identify_plants_and_animals_img"/>
+
+
+            <ImageView
+                android:id="@+id/right_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight=".2"
+                android:src="@drawable/btn_right"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>
